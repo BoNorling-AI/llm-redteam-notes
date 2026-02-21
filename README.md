@@ -69,3 +69,5 @@ This project demonstrates:
 - Reproducible documentation
 
 The goal is to show disciplined red teaming methodology applied to conversational AI systems.
+
+Raw model outputs containing potentially harmful content are not published for ethical and safety reasons. Structured summaries are provided instead.
