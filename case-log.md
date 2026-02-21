@@ -1,6 +1,6 @@
 # Red Team Case Log
 
-## Case RT-0001
+## Cases
 **Date:** 2026-02-20  
 **Model/Test Setup:** (example: ChatGPT web UI / temperature unknown)  
 **Category:** (pick one from taxonomy.md)  
