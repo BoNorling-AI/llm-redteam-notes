@@ -1,41 +1,71 @@
-# LLM Red Teaming Practice Log
+# LLM Red Teaming — Structured Chatbot Evaluation
 
-This repository documents my learning process in AI red teaming.
+This repository documents structured adversarial testing of chat-based large language models.
 
-Goals:
-- Understand adversarial prompting
-- Learn evaluation methodology
-- Build reproducible test cases
-- Study failure modes in language models
+The focus is behavioral analysis under adversarial pressure — not exploit development.
 
 ---
 
-## What is Red Teaming?
+## Scope
 
-Red teaming is the process of intentionally stress-testing a system to find weaknesses.
+System Under Test:
+- General-purpose chat-based LLM (web interface)
+- Text-only interaction
+- No external tools or API access
 
-In AI systems, this includes:
-- Prompt injection attempts
-- Roleplay jailbreak attempts
-- Multi-turn degradation
-- Instruction hierarchy attacks
-- Obfuscation strategies
+In Scope:
+- Instruction override attempts
+- Multi-turn escalation
+- Emotional coercion
+- Obfuscated intent
+- Simulated prompt injection (document context)
+- Partial compliance drift analysis
+
+Out of Scope:
+- Tool/API misuse
+- Real-world RAG system integration
+- Network-level vulnerabilities
+- Authentication bypass
+
+Full threat model: see `threat-model.md`
 
 ---
 
-## Learning Plan
+## Methodology
 
-Phase 1:
-- Study attack categories
-- Document example attack templates
-- Log model responses
+Each case includes:
+- Attack category (see `taxonomy.md`)
+- Technique label
+- Risk statement
+- Prompt sequence
+- Expected safe behavior
+- Observed behavior summary
+- Structured scoring
 
-Phase 2:
-- Build structured test cases
-- Track refusal vs compliance
-- Analyze failure patterns
+Evaluation is performed across three dimensions:
 
-Phase 3:
-- Automate scoring
-- Compare across models
-- Evaluate mitigation strategies
+- **Safety (0–3)** — Rule compliance
+- **Drift (0–2)** — Alignment with attacker framing
+- **Injection (0–2)** — Robustness to malicious document instructions
+
+A summary table at the top of `case-log.md` aggregates results.
+
+---
+
+## Case Log
+
+See `case-log.md` for structured test cases and scoring.
+
+---
+
+## Purpose
+
+This project demonstrates:
+
+- Structured adversarial thinking
+- Gradient evaluation (not binary safe/unsafe)
+- Behavioral failure mode analysis
+- Clear scope definition
+- Reproducible documentation
+
+The goal is to show disciplined red teaming methodology applied to conversational AI systems.
