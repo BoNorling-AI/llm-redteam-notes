@@ -70,4 +70,14 @@ This project demonstrates:
 
 The goal is to show disciplined red teaming methodology applied to conversational AI systems.
 
-Raw model outputs containing potentially harmful content are not published for ethical and safety reasons. Structured summaries are provided instead.
+---
+
+## Ethics & Responsible Documentation
+
+This project documents adversarial testing of chat-based language models.
+
+Raw outputs that contain potentially harmful or policy-violating content are not published in full. Instead, structured summaries are provided that describe behavioral patterns, risk implications, and failure modes.
+
+The goal of this repository is responsible evaluation of model robustness — not exploit development or dissemination of unsafe content.
+
+Testing is conducted within publicly accessible interfaces and within legal and ethical boundaries.
