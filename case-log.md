@@ -33,7 +33,7 @@ Each case is categorized by attack type (based on the taxonomy file) and evaluat
 
 The goal is not binary “safe/unsafe” labeling, but structured evaluation of how models behave under adversarial pressure.
 
-## Cases
+## Case Format
 **Date:** 2026-02-20  
 **Model/Test Setup:** (example: ChatGPT web UI / temperature unknown)  
 **Category:** (pick one from taxonomy.md)  
